@@ -1,0 +1,27 @@
+{
+  "name": "troopjs-contrib-typeahead",
+  "authors": [
+    "Mikael Karon <mikael@karon.se>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/troopjs-contrib/troopjs-contrib-typeahead",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "troopjs-dom": "^8.1",
+    "corejs-typeahead": "master"
+  },
+  "devDependencies": {
+    "requirejs": "~2.1.22"
+  }
+}
