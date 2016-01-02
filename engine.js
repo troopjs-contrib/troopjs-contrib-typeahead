@@ -9,8 +9,8 @@ define([
   Bloodhound.noConflict();
 
   // Extend and copy intance properies from `Bloodhound.prototype`
-  var Dataset = Composition.extend(Bloodhound, {
-    "displayName": "troopjs-contrib-typeahead/dataset"
+  var Engine = Composition.extend(Bloodhound, {
+    "displayName": "troopjs-contrib-typeahead/engine"
   }, [
     "__ttAdapter,",
     "_loadPrefetch",
@@ -32,8 +32,8 @@ define([
   }, {}));
 
   // Copy static properties from `Bloodhound`
-  Dataset.tokenizers = Bloodhound.tokenizers;
+  Engine.tokenizers = Bloodhound.tokenizers;
 
-  // Return `Dataset`
-  return Dataset;
+  // Return `DatEngineaset`
+  return Engine;
 });
