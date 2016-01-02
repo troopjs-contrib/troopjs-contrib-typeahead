@@ -9,7 +9,9 @@ define([
   Bloodhound.noConflict();
 
   // Extend and copy intance properies from `Bloodhound.prototype`
-  var Dataset = Composition.extend(Bloodhound, [
+  var Dataset = Composition.extend(Bloodhound, {
+    "displayName": "troopjs-contrib-typeahead/dataset"
+  }, [
     "__ttAdapter,",
     "_loadPrefetch",
     "_initialize",

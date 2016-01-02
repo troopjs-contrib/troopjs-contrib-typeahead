@@ -29,6 +29,10 @@ define([
       });
     },
 
+    {
+      "displayName": "troopjs-contrib-typeahead/component"
+    },
+
     [
       "open",
       "close",
