@@ -18,6 +18,9 @@
     "tests"
   ],
   "dependencies": {
+    "jquery": ">=1.8.1 <4",
+    "troopjs-compose": "^4.0",
+    "troopjs-core": "^8.0",
     "troopjs-dom": "^8.1",
     "corejs-typeahead": "master"
   },
