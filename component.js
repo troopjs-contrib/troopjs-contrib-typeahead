@@ -30,7 +30,19 @@ define([
     },
 
     {
-      "displayName": "troopjs-contrib-typeahead/component"
+      "displayName": "troopjs-contrib-typeahead/component",
+
+      "on/typeahead/render": function($event) {
+        var me = this;
+        var length = arguments[LENGTH];
+        var args = ["sig/render", $($event.target)];
+
+        while (length-- > 1) {
+          args[length + 1] = arguments[length];
+        }
+
+        return me.emit.apply(me, args);
+      }
     },
 
     [
